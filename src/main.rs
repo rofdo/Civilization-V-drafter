@@ -28,3 +28,17 @@ fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Vec<Vec<u32
 fn main() {
     println!("Hello, world!");
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_choose_civs() {
+        let mut civs = (0..143).collect::<Vec<_>>();
+        let players = 6;
+        let picks = 3;
+        let result = choose_civs(&mut civs, players, picks);
+        assert_eq!(result.len(), players);
+        assert_eq!(result[0].len(), picks);
+    }
+}
