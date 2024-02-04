@@ -1,0 +1,766 @@
+[
+  {
+    "name": "Akkad",
+    "leader": "Sargon",
+    "bias": "None"
+  },
+  {
+    "name": "Aksum",
+    "leader": "Ezana",
+    "bias": [
+      "Hill"
+    ]
+  }
+  {
+    "name": "America",
+    "leader": "Washington",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Arabia",
+    "leader": "Harun al-Rashid",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "Argentina",
+    "leader": "Eva Perón",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Armenia",
+    "leader": "Tigranes",
+    "bias": [
+      "Hill",
+      "avoid Jungle"
+    ]
+  },
+  {
+    "name": "Assyria",
+    "leader": "Ashurbanipal",
+    "bias": [
+      "Avoid Tundra"
+    ]
+  },
+  {
+    "name": "Australia",
+    "leader": "Henry Parker",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Austria",
+    "leader": "Maria Theresa",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Ayyubids",
+    "leader": "Saladin",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "Aztecs",
+    "leader": "Montezuma",
+    "bias": [
+      "Jungle"
+    ]
+  },
+  {
+    "name": "Babylon",
+    "leader": "Nebuchadnezzar II",
+    "bias": [
+      "Avoid Tundra"
+    ]
+  },
+  {
+    "name": "Belgium",
+    "leader": "Leopold II",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Boers",
+    "leader": "Paulus Kruger",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Bolivia",
+    "leader": "Tata Belzu",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Brazil",
+    "leader": "Pedro II",
+    "bias": [
+      "Jungle"
+    ]
+  },
+  {
+    "name": "Brunei",
+    "leader": "Bolkiah",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Bulgaria",
+    "leader": "Asparukh Khan",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Burma",
+    "leader": "Anawrahta",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Byzantium",
+    "leader": "Theodora",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Canada",
+    "leader": "John A. MacDonald",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Cartage",
+    "leader": "Dido",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Celts",
+    "leader": "Boudicca",
+    "bias": [
+      "Forest"
+    ]
+  },
+  {
+    "name": "Chile",
+    "leader": "Bernardo O’ Higgens",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "China",
+    "leader": "Wu Zetian",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Colombia",
+    "leader": "Simon Bolivar",
+    "bias": [
+      "Forest",
+      "Plains"
+    ]
+  },
+  {
+    "name": "Cuba",
+    "leader": "Fidel Castro",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Denmark",
+    "leader": "Harald Bluetooth",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Egypt",
+    "leader": "Ramesses II",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "England",
+    "leader": "Elizabeth",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Ethiopia",
+    "leader": "Haile Selassie",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Finland",
+    "leader": "Mannerheim",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "France",
+    "leader": "Napoleon",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Franks",
+    "leader": "Charlemagne",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Gaul",
+    "leader": "Vercingetorix",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Georgia",
+    "leader": "Tamar",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Germany",
+    "leader": "Bismarck",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Golden Horde",
+    "leader": "Batu Khan",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Goths",
+    "leader": "Alaric I",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Greece",
+    "leader": "Pericles",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Hitites",
+    "leader": "Muwatallis",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Huns",
+    "leader": "Attila",
+    "bias": [
+      "Avoid Forest",
+      "Avoid Jungle"
+    ]
+  },
+  {
+    "name": "Hungary",
+    "leader": "András II",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Inca",
+    "leader": "Pachacuti",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "India",
+    "leader": "Gandhi",
+    "bias": [
+      "Grassland"
+    ]
+  },
+  {
+    "name": "Indonesia",
+    "leader": "Gajah Mada",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Ireland",
+    "leader": "Michael Collins",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Iroquois",
+    "leader": "Hiawatha",
+    "bias": [
+      "Forest"
+    ]
+  },
+  {
+    "name": "Israel",
+    "leader": "David",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Italy",
+    "leader": "Vittorio Emanuele III",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Japan",
+    "leader": "Oda Nobunaga",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Jerusalem",
+    "leader": "Fulk V",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Khmer",
+    "leader": "Suryavarman II",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Kilwa",
+    "leader": "Ali ibn al-Hassan Shirazi",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Kongo",
+    "leader": "Mvemba a Nzinga",
+    "bias": [
+      "Forest"
+    ]
+  },
+  {
+    "name": "Korea",
+    "leader": "Sejong",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Lithuania",
+    "leader": "Vytautas",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Macedonia",
+    "leader": "Alexander",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Madagascar (Malagasy)",
+    "leader": "Ralambo",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Manchuria",
+    "leader": "Nurhaci",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Maori",
+    "leader": "Te Rauparahav",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Maurya",
+    "leader": "Ashoka",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Maya",
+    "leader": "Pacal",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Mexico",
+    "leader": "Benito Juarez",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Mongolia",
+    "leader": "Genghis Khan",
+    "bias": [
+      "Plains"
+    ]
+  },
+  {
+    "name": "Moors",
+    "leader": "Abd-ar-Rahman III",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Morocco",
+    "leader": "Ahmad al-Mansur",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "Mysore",
+    "leader": "Hyder Ali",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Nabataea",
+    "leader": "Aretas III",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "Netherlands",
+    "leader": "William",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "New Zealand",
+    "leader": "Michael Joseph Savage",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Normandy",
+    "leader": "William the Conqueror",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Norway",
+    "leader": "Harald Hardrada",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Nubia",
+    "leader": "Amanitore",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "Oman",
+    "leader": "Saif bin Sultan",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Ottomans",
+    "leader": "Suleiman",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Palmyra",
+    "leader": "Zenobia",
+    "bias": [
+      "Desert"
+    ]
+  },
+  {
+    "name": "Papal States (Vatican)",
+    "leader": "Urban II",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Persia",
+    "leader": "Darius I",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Philippines",
+    "leader": "Emilio Aguinaldo",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Phoenicia",
+    "leader": "Hiram I",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Poland",
+    "leader": "Casimir III",
+    "bias": [
+      "Plains"
+    ]
+  },
+  {
+    "name": "Polynesia",
+    "leader": "Kamehameha",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Portugal",
+    "leader": "Maria I",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Prussia",
+    "leader": "Frederick",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Romania",
+    "leader": "Carol I",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Rome",
+    "leader": "Augustus Caesar",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Russia",
+    "leader": "Catherine",
+    "bias": [
+      "Tundra"
+    ]
+  },
+  {
+    "name": "Scotland",
+    "leader": "Robert the Bruce",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Shoshone",
+    "leader": "Pocatello",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Siam",
+    "leader": "Ramkhamhaeng",
+    "bias": [
+      "River"
+    ]
+  },
+  {
+    "name": "Sioux",
+    "leader": "Sitting Bull",
+    "bias": [
+      "Plains"
+    ]
+  },
+  {
+    "name": "Songhai",
+    "leader": "Askia",
+    "bias": [
+      "River"
+    ]
+  },
+  {
+    "name": "Spain",
+    "leader": "Isabella",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Sumeria",
+    "leader": "Gilgamesh",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Sweden",
+    "leader": "Gustavus Adolphus",
+    "bias": [
+      "Tundra"
+    ]
+  },
+  {
+    "name": "Switzerland",
+    "leader": "Jonas Furrer",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Tibet",
+    "leader": "Ngawang Lobsang Gyatso",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Timurids",
+    "leader": "Timur",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Tonga",
+    "leader": "'Aho'eitu",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Turkey",
+    "leader": "Ataturk",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "United Arab Emirates (UAE)",
+    "leader": "Sheikh Zayed",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Ukraine",
+    "leader": "Yaroslav I",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Venice",
+    "leader": "Enrico Dandolo",
+    "bias": [
+      "Coast"
+    ]
+  },
+  {
+    "name": "Vietnam",
+    "leader": "Hai Ba Trung",
+    "bias": [
+      "Wetland"
+    ]
+  },
+  {
+    "name": "Wales",
+    "leader": "Owain Glyndwr",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Yugoslavia",
+    "leader": "Aleksandar I",
+    "bias": [
+      "None"
+    ]
+  },
+  {
+    "name": "Zimbabwe",
+    "leader": "Nyatsimba Mutota",
+    "bias": [
+      "Hill"
+    ]
+  },
+  {
+    "name": "Zulu",
+    "leader": "Shaka",
+    "bias": [
+      "Avoid Jungle"
+    ]
+  }
+]
