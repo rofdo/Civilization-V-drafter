@@ -17,7 +17,10 @@ struct Civ {
     name: String,
 }
 
-fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Vec<Vec<Civ>> {
+fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Result<Vec<Vec<Civ>>, Box<dyn std::error::Error>> {
+    if players * picks > civs.len() {
+        return Err("Not enough civs to choose from".into());
+    }
     let mut result = vec![vec![]; players];
     for _ in 0..picks {
         for player in 0..players {
@@ -26,7 +29,7 @@ fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Vec<Vec<Civ
             result[player].push(civ);
         }
     }
-    result
+    Ok(result)
 }
 
 fn main() {
@@ -51,7 +54,7 @@ mod tests {
         ];
         let players = 3;
         let picks = 1;
-        let result = choose_civs(&mut civs, players, picks);
+        let result = choose_civs(&mut civs, players, picks).unwrap();
         assert_eq!(result.len(), players);
         assert_eq!(result[0].len(), picks);
     }
