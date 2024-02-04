@@ -2,7 +2,9 @@
   {
     "name": "Akkad",
     "leader": "Sargon",
-    "bias": "None"
+    "bias": [
+      "None"
+    ]
   },
   {
     "name": "Aksum",
@@ -10,7 +12,7 @@
     "bias": [
       "Hill"
     ]
-  }
+  },
   {
     "name": "America",
     "leader": "Washington",
