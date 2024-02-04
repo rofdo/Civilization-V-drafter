@@ -1,4 +1,5 @@
 use clap::Parser;
+use log::info;
 use rand::Rng;
 use serde::{Deserialize, Serialize};
 
@@ -12,6 +13,15 @@ struct Args {
     /// The number of civilizations for each player to choose from
     #[arg(short, long, default_value = "5")]
     picks: usize,
+    /// A list of civilizations to ban
+    #[arg(long, default_value = "[]", num_args = 1..)]
+    banned_civs: Vec<String>,
+    /// A list of leaders to ban
+    #[arg(long, default_value = "[]", num_args = 1..)]
+    banned_leaders: Vec<String>,
+    /// A list of biases to ban
+    #[arg(long, default_value = "[]", num_args = 1..)]
+    banned_biases: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -52,6 +62,15 @@ fn main() {
     let path = PathBuf::from("civilizations.json");
     let args = Args::parse();
     let civs: Vec<Civ> = get_civs(path).unwrap();
+    let civs: Vec<Civ> = civs
+        .into_iter()
+        .filter(|civ| {
+            !args.banned_civs.contains(&civ.name)
+                || args.banned_leaders.contains(&civ.leader)
+                || args.banned_biases.iter().any(|bias| civ.bias.contains(bias))
+        })
+        .collect();
+    info!("total civs: {}", civs.len());
 
     let result = choose_civs(&mut civs.clone(), args.users, args.picks).unwrap_or_else(|err| {
         log::error!("{}", err);
