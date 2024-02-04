@@ -1,5 +1,6 @@
 use clap::Parser;
 use rand::Rng;
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Parser)]
 struct Args {
@@ -11,9 +12,12 @@ struct Args {
     picks: usize,
 }
 
-type Civ = u32;
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct Civ {
+    name: String,
+}
 
-fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Vec<Vec<u32>> {
+fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Vec<Vec<Civ>> {
     let mut result = vec![vec![]; players];
     for _ in 0..picks {
         for player in 0..players {
@@ -34,9 +38,19 @@ mod tests {
     use super::*;
     #[test]
     fn test_choose_civs() {
-        let mut civs = (0..143).collect::<Vec<_>>();
-        let players = 6;
-        let picks = 3;
+        let mut civs = vec![
+            Civ {
+                name: "America".to_string(),
+            },
+            Civ {
+                name: "Arabia".to_string(),
+            },
+            Civ {
+                name: "Australia".to_string(),
+            },
+        ];
+        let players = 3;
+        let picks = 1;
         let result = choose_civs(&mut civs, players, picks);
         assert_eq!(result.len(), players);
         assert_eq!(result[0].len(), picks);
