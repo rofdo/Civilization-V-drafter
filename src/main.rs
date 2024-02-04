@@ -7,10 +7,10 @@ use std::path::PathBuf;
 #[derive(Debug, Parser)]
 struct Args {
     /// The number of players to play the game
-    #[arg(short, long)]
-    players: usize,
+    #[arg(short, long, default_value = "6")]
+    users: usize,
     /// The number of civilizations for each player to choose from
-    #[arg(short, long)]
+    #[arg(short, long, default_value = "5")]
     picks: usize,
 }
 
@@ -45,7 +45,24 @@ fn get_civs(path: PathBuf) -> Result<Vec<Civ>, Box<dyn std::error::Error>> {
 }
 
 fn main() {
-    println!("Hello, world!");
+    env_logger::init();
+
+    let path = PathBuf::from("civilizations.json");
+    let args = Args::parse();
+    let civs: Vec<Civ> = get_civs(path).unwrap();
+
+    let result = choose_civs(&mut civs.clone(), args.users, args.picks).unwrap_or_else(|err| {
+        log::error!("{}", err);
+        std::process::exit(1);
+    });
+    for (i, player) in result.iter().enumerate() {
+        let civs = player
+            .iter()
+            .map(|civ| civ.name.clone())
+            .collect::<Vec<String>>()
+            .join(", ");
+        println!("Player {}: {}", i + 1, civs);
+    }
 }
 
 #[cfg(test)]
