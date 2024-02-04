@@ -17,6 +17,8 @@ struct Args {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 struct Civ {
     name: String,
+    leader: String,
+    bias: Vec<String>,
 }
 
 fn choose_civs(
@@ -73,12 +75,18 @@ mod tests {
         let mut civs = vec![
             Civ {
                 name: "America".to_string(),
+                leader: "Teddy".to_string(),
+                bias: vec!["None".to_string()],
             },
             Civ {
                 name: "Arabia".to_string(),
+                leader: "Saladin".to_string(),
+                bias: vec!["None".to_string()],
             },
             Civ {
-                name: "Australia".to_string(),
+                name: "Aztec".to_string(),
+                leader: "Montezuma".to_string(),
+                bias: vec!["None".to_string()],
             },
         ];
         let players = 3;
