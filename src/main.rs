@@ -2,6 +2,8 @@ use clap::Parser;
 use rand::Rng;
 use serde::{Deserialize, Serialize};
 
+use std::path::PathBuf;
+
 #[derive(Debug, Parser)]
 struct Args {
     /// The number of players to play the game
@@ -17,7 +19,11 @@ struct Civ {
     name: String,
 }
 
-fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Result<Vec<Vec<Civ>>, Box<dyn std::error::Error>> {
+fn choose_civs(
+    civs: &mut Vec<Civ>,
+    players: usize,
+    picks: usize,
+) -> Result<Vec<Vec<Civ>>, Box<dyn std::error::Error>> {
     if players * picks > civs.len() {
         return Err("Not enough civs to choose from".into());
     }
@@ -30,6 +36,12 @@ fn choose_civs(civs: &mut Vec<Civ>, players: usize, picks: usize) -> Result<Vec<
         }
     }
     Ok(result)
+}
+
+fn get_civs(path: PathBuf) -> Result<Vec<Civ>, Box<dyn std::error::Error>> {
+    let file = std::fs::File::open(path)?;
+    let civs: Vec<Civ> = serde_json::from_reader(file)?;
+    Ok(civs)
 }
 
 fn main() {
@@ -57,5 +69,12 @@ mod tests {
         let result = choose_civs(&mut civs, players, picks).unwrap();
         assert_eq!(result.len(), players);
         assert_eq!(result[0].len(), picks);
+    }
+
+    #[test]
+    fn test_get_civs() {
+        let path = PathBuf::from("civilizations.json");
+        let result = get_civs(path).unwrap();
+        assert_eq!(result.len(), 109);
     }
 }
