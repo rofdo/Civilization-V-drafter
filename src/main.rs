@@ -66,8 +66,8 @@ fn main() {
         .into_iter()
         .filter(|civ| {
             !args.banned_civs.contains(&civ.name)
-                || args.banned_leaders.contains(&civ.leader)
-                || args.banned_biases.iter().any(|bias| civ.bias.contains(bias))
+                || args.banned_leaders.contains(&civ.leader.to_lowercase())
+                || args.banned_biases.iter().any(|bias| civ.bias.contains(&bias.to_lowercase()) )
         })
         .collect();
     info!("total civs: {}", civs.len());
